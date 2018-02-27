@@ -18,7 +18,16 @@ var config = {
     rules: [
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            query: {
+              modules: true,
+              localIdentName: '[name]__[local]___[hash:8]'
+            }
+          }
+        ]
       },
       {
         test: /\.(gif|jpg|png|svg)$/,
