@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-var BundleTracker = require('webpack-bundle-tracker');
+// var BundleTracker = require('webpack-bundle-tracker');
 
 var SRC = path.resolve(__dirname, 'src');
 var BUILD = path.resolve(__dirname, 'build');
@@ -54,10 +54,10 @@ var config = {
     extensions: ['.js', '.jsx']
   },
   plugins: [
-    new BundleTracker({
-      filename: './webpack-stats.json',
-      indent: 2
-    }),
+    // new BundleTracker({
+    //   filename: './webpack-stats.json',
+    //   indent: 2
+    // })
   ],
   devServer: {
     contentBase: BUILD,
