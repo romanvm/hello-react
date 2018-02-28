@@ -58,7 +58,12 @@ var config = {
       filename: './webpack-stats.json',
       indent: 2
     }),
-  ]
+  ],
+  devServer: {
+    contentBase: BUILD,
+    compress: true,
+    port: 3000
+  }
 };
 
 module.exports = config;

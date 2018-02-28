@@ -6,7 +6,8 @@
     "build": "webpack -p",
     "build-dev": "webpack --mode development",
     "test": "jest",
-    "watch": "webpack --watch --mode development"
+    "watch": "webpack --watch --mode development",
+    "start": "webpack-dev-server --open --mode development"
   },
   "author": "Roman V.M.",
   "license": "MIT",
@@ -27,6 +28,7 @@
     "style-loader": "^0.20.2",
     "webpack": "^4.0.0",
     "webpack-bundle-tracker": "^0.2.1",
-    "webpack-cli": "^2.0.9"
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.1.0"
   }
 }
