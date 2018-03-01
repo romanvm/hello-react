@@ -56,7 +56,8 @@ var config = {
     contentBase: BUILD,
     compress: true,
     port: 3000,
-    watchContentBase: true
+    watchContentBase: true,
+    historyApiFallback: true
   }
 };
 
