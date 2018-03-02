@@ -9,6 +9,12 @@
     "watch": "webpack --watch --mode development",
     "start": "webpack-dev-server --open --mode development"
   },
+  "jest": {
+    "transform": {
+      ".+\\.(css|png|jpg|svg|gif|ttf|woff|woff2)$": "jest-transform-stub",
+      ".+\\.jsx?$": "babel-jest"
+    }
+  },
   "author": "Roman V.M.",
   "license": "MIT",
   "dependencies": {
@@ -22,6 +28,7 @@
     "css-loader": "^0.28.10",
     "file-loader": "^1.1.10",
     "jest": "^22.4.2",
+    "jest-transform-stub": "^1.0.0",
     "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
