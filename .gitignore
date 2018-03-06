@@ -1,5 +1,7 @@
 node_modules/
 build/bundle.js
+build/styles.css
 build/img/
 build/fonts/
 webpack-stats.json
+*.log
