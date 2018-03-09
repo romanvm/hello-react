@@ -1,0 +1,5 @@
+*.test.jsx
+.eslintrc.js
+webpack.config.js
+node_modules/**
+build/**
