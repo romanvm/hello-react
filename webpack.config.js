@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var SRC = path.resolve(__dirname, 'src');
 var BUILD = path.resolve(__dirname, 'build');
@@ -19,7 +19,7 @@ var config = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'stage-3', 'react']
+            presets: ['env', 'stage-3', 'react']
           }
         }
       },
