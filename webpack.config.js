@@ -6,7 +6,7 @@ var SRC = path.resolve(__dirname, 'src');
 var BUILD = path.resolve(__dirname, 'build');
 
 var config = {
-  entry: SRC + '/index.jsx',
+  entry: SRC + '/index.js',
   output: {
     path: BUILD,
     filename: 'bundle.js'
